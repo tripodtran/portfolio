@@ -134,8 +134,8 @@ function renderContentFor(alt, title, thumbSrc, fallbackDesc) {
       </article>`;
   }
 
-  /* Three-legged Coffee Table — 3-up gallery */
-  if (isMatch(alt, title, 'Three-legged Coffee Table', 'Three-Legged Coffee Table')) {
+  /* Segment — 3-up gallery */
+  if (isMatch(alt, title, 'Segment', 'Segment')) {
     const imgs = ['images/skb24.jpg', 'images/skb25.jpg', 'images/skb26.jpg'];
     return `
       <article class="lb-article">
@@ -143,7 +143,7 @@ function renderContentFor(alt, title, thumbSrc, fallbackDesc) {
         <p>A three-legged coffee table with two supports, developed from the idea of creating a flat-pack, easy-to-ship furniture piece. Made from hand-turned oak and manufactured entirely in the UK. By creating a deconstructable piece, customers have easier access to furniture globally.</p>
         <p>The flat-pack table with a glass tabletop blends functionality and aesthetics. It allows easy assembly and disassembly—great for small apartments or people on the move. Three sturdy legs fold for hassle-free storage or transport, and the glass top provides an elegant, easy-to-clean surface.</p>
         <h3 class="muted">Materials: Oak and glass</h3>
-        <div class="lb-grid">${gallery(imgs, 'Three-legged coffee table detail', thumbSrc || 'images/skb22.jpg')}</div>
+        <div class="lb-grid">${gallery(imgs, 'Segment detail', thumbSrc || 'images/skb22.jpg')}</div>
       </article>`;
   }
 
@@ -300,3 +300,4 @@ function renderContentFor(alt, title, thumbSrc, fallbackDesc) {
     }
   });
 })();
+
